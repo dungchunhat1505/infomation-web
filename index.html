@@ -69,14 +69,21 @@
         }
 
         footer .contact-info {
-            display: flex;
+            display: inline-flex;
+            /* Chuyển sang inline-flex để các phần tử nằm ngang */
             align-items: center;
             margin: 10px auto;
+            justify-content: center;
+            /* Căn giữa các phần tử */
+            text-align: center;
+            /* Căn giữa nội dung văn bản */
         }
 
         footer .contact-info img {
             width: 64px;
             height: 64px;
+            margin: 0 10px;
+            /* Tạo khoảng cách giữa các icon */
         }
 
         footer .contact-info span {

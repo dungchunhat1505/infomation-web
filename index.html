@@ -24,15 +24,29 @@
             margin: 0;
             padding: 0;
             height: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
         .w3-main {
+            flex: 1;
             margin-left: 300px;
             padding-bottom: 50px;
         }
 
-        #contact {
-            margin-top: 50px;
+        footer {
+            border-top: 2px solid #ccc;
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer h1 {
+            margin: 0;
+        }
+
+        footer .w3-row-padding {
+            margin: 0 -16px;
         }
 
         .exercise-link {
@@ -52,6 +66,25 @@
 
         .exercise-link a:hover {
             text-decoration: underline;
+        }
+
+        footer .contact-info {
+            display: inline-block;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        footer .contact-info img {
+            vertical-align: middle;
+            width: 64px;
+            height: 64px;
+        }
+
+        footer .contact-info span {
+            display: block;
+            margin-top: 5px;
+            text-decoration: none;
+            color: inherit;
         }
     </style>
 </head>
@@ -126,15 +159,18 @@
             </div>
         </div>
 
-        <!-- Contact Section -->
-        <div class="w3-container w3-padding-large w3-grey">
-            <h1 id="contact"><b>Contact Me</b></h1>
+        <!-- Footer Section -->
+        <!-- Footer Section -->
+        <footer>
+            <h1><b>Contact Me</b></h1>
             <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
-                <a href="https://www.facebook.com/dung.lequang.92102/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/dung.lequang.92102/" target="_blank" rel="noopener noreferrer"
+                    class="contact-info">
                     <img src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000" alt="Facebook"
                         style="width: 64px; height: 64px;">
                 </a>
-                <a href="https://www.instagram.com/lqdung_27/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/lqdung_27/" target="_blank" rel="noopener noreferrer"
+                    class="contact-info">
                     <img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram"
                         style="width: 64px; height: 64px;">
                 </a>
@@ -144,7 +180,8 @@
                     <span>(+84) 582 113 215</span>
                 </a>
             </div>
-        </div>
+        </footer>
+
     </div>
 
     <script>
